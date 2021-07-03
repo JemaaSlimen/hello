@@ -1,0 +1,67 @@
+ALGORITHM premier
+VAR
+    nom,prenom, nom_complet : string of characters;
+    nbr: INTEGER;
+
+BEGIN
+write ('name:');
+Read (name)
+write ('firstname:');
+Read (first name);
+full_name <- name & '' & firstname
+write ('your full name is:', full_name)
+
+END
+
+VAR
+    phrase : string of characters;
+    nbr: INTEGER;
+    
+BEGIN
+write ('your phr:');
+Read (sentence)
+nbr <- length
+write ('your sentence contains', nbr, 'characters')
+END
+
+
+FUNCTION nbrVoyelles(texte:chaine de caracters):INTEGER
+VAR
+i,nbr:INTEGER
+BEGIN
+nbr <-0
+pour i<-0 à longueur (texte)-1
+si texte[i]='a' OU texte[i]='e' OU texte[i]='i' OU texte[i]='o' OU texte[i]='u' OU texte[i]='y'
+    nbr<-nbr+1 
+fin si
+ fin pour
+ : return nbr
+VAR
+   phrase. choix:caracters chaine
+   répéter
+   ecrire('entrer une phrase de votre choix:')
+   Read(phrase)
+   write('your sentence contains',nbrVoyelles(phrase),'Voyelles(s)')
+   write('oui: entrer une nouvelle phrase. non:quitter le programme')
+   Read(choix)
+   jusqu'à choix = 'non'
+       END
+BEGIN
+    set_instructions
+    RETURN value ;
+END
+
+
+VAR
+    phrase : string of characters;
+    nbr: INTEGER;
+    
+BEGIN
+write ('your phr:');
+Read (sentence)
+nbr <- length
+write ('your sentence contains', nbr, 'characters')
+END
+
+
+

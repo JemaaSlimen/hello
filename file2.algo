@@ -1,0 +1,84 @@
+ALGORITHM  somme
+// cas 1
+VAR
+   tab : ARRAY_OF INTEGER[length];
+   i,j,sum,sum1,sum2 : INTEGER;
+BEGIN
+sum
+// la somme des elements distincts
+  FOR i FROM 0 TO tab.length-1 STEP 1  DO
+  FOR j FROM 0 TO tab.length-1 STEP 1  DO
+  IF (i=j) THEN
+  sum1 += tab[i]
+  ELSE
+      (tab[i] = tab[j]
+      break  
+  END_IF
+END_FOR
+
+//la somme des elements distincts (cas inverse)
+  FOR j FROM 0 TO tab.length-1 STEP 1  DO
+  FOR i FROM 0 TO tab.length-1 STEP 1  DO
+  IF (i=j) THEN
+  sum2 += tab[j]
+  ELSE
+      (tab[j] = tab[i]
+      break  
+  END_IF
+END_FOR
+ //somme finale 
+  sum=sum1+sum2
+  write("la somme des element distinc" sum)
+
+END
+
+
+// cas 2
+ var 
+ tab1,tab2,tab3:INTEGER;
+ t1,t2,t3,sum:INTEGER;
+ BEGIN
+ write("donner la taille de premier tableau");
+ Read(t1);
+ write("donner la taille de deuxieme tableau")
+ Read(t2);
+ redeem (tab1[t1]);
+  redeem (tab2[t2]);
+  t3:=t1+t2;
+  redeem(tab3[t3]);
+
+  write("la saisie de premier tableau");
+  FOR i FROM 0 TO tab1.length-1 STEP 1 DO
+      write("donner l'élement num:", i);
+      read (tab1[i]);
+  END_FOR
+  write("la saisie bien fait");
+
+  write("la saisie de deuxieme tableau");
+  FOR i FROM 0 TO tab2.length-1 STEP 1 DO
+      write("donner l'élement num:", i);
+      read (tab2[i]);
+  END_FOR
+  write("la saisie bien fait");
+  
+   write("la saisie de deuxieme tableau");
+  FOR i FROM 0 TO tab3.length-1 STEP 1 DO
+  IF (i != i+1) THEN
+      sum+ = tab3[i];
+  END_IF
+      write("donner l'élement num:", i);
+      read (tab3[i]);
+  END_FOR
+  write("la saisie bien fait");
+    
+    END
+  
+
+
+
+
+
+
+
+
+

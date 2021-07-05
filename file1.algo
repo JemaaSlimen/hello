@@ -1,0 +1,39 @@
+ALGORITHM Phrase
+VAR
+ phrase, choix: string;
+ i,nbr,nbr1,nbrmot,nbrcaractere:INTEGER
+ 
+
+BEGIN
+//ecriture de la phrase 
+write ('your phrase:');
+Read (phrase)
+//la longueur de la phrase 
+nbr1 := length
+write ('your phrase contains', nbr1, 'characters')
+
+//voyelle
+
+ FOR i FROM 0 TO phrase.length-1 STEP 1  DO
+     IF (phrase[i]='a' OR phrase[i]='e' OR phrase[i]='i' OR phrase[i]='o' OR phrase[i]='u' OR phrase[i]='y') THEN
+        nbr:=nbr+1 
+     END_IF
+ END_FOR
+ write(nbr)
+ // nombre de mot
+
+ FOR i FROM 0 TO phrase.length-1 STEP 1 DO
+     IF (phrase[i])= " ") THEN
+         nbrmot:=nmot+1 
+     END_IF
+     IF (phrase[i]= .) THEN
+        Break
+     END_IF
+ END_FOR
+ write(nbrmot)
+ // nombre de caractere
+nbrcaractere:=phrase.length-nbrmot
+
+
+
+

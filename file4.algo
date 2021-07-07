@@ -1,0 +1,12 @@
+PROCEDURE tri_insertion (var t: ARRAY_OF INTEGER[n],n:INTEGER)
+VAR
+    insr,p,i:INTEGER
+BEGIN
+    insr:=t[i];
+    p:=i-1;
+    WHILE (p>0 and t[p] > aux) DO
+    t[p+1]:=t[p];
+    p:= p-1;
+    END_WHILE
+    t[t+1]:=insr;
+END
